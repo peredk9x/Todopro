@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Setting/index.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="Setting/fontawesome-free-5.14.0-web/css/all.css" />
+    <title>Trang cá nhân</title>
+    <script  src="js/indexTDP.js"></script>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul id="menu">
+                <li><a href=""><img src="Picture/logoTodoPro.jpg " width="55px" height="49px" id="logo" /></a></li>
+                <li><input id="search" type="text" placeholder="Search..." /></li>
+                <li id="home"><a href=""><i class="fas fa-home"></i></a></li>
+                <li><a href=""><i id="card" class="far fa-address-card"></i></a></li>
+                <li><a href=""><i id="bell" class="far fa-bell"></i></a></li>
+                <li><a href=""><i id="question" class="far fa-question-circle"></i></a></li>
+                <li id="user"><a href="">Login</a>/<a href="">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div id="coverImg">
+            <img ondblclick="clickhidden()" src="Picture/b-bor-p.jpg" onclick="clickshow()" width="1150px" height="200px" />
+        </div>
+        <div id="Avatar" >
+            <img id="avatar" ondblclick="clickhidden()" onclick="clickshow()" src="./Picture/FB_IMG_1592367715099.jpg" width="230px" height="230px">
+                <div id="edit-img">
+                    <button id="change-img"><i class="fas fa-plus-circle">Thay ảnh</i></button>
+                </div>
+        </div>
+        <div id="content">
+            <div id="content-left">
+                <h3><i class="fas fa-user-tie"> Thông tin cá nhân</i></h3>
+                <ul id="note-content">
+                    <li><i class="fas fa-user-secret"><input type="text" id="name" disabled value="Deadline" /></i></li>
+                    <li><i class="fas fa-transgender"><input type="text" id="gender" disabled value="Nam" max-lenght="2" /></i></li>
+                    <li><i class="fas fa-calendar-alt"><input type="date" id="date" disabled value="1/1/2001" /></i></li>
+                    <li><i class="fas fa-phone-square-alt"><input type="number" id="phone" disabled value="0123456789" min="0000000000" max="9999999999"/></i></li>
+                    <li><i class="fas fa-envelope"><input type="email" id="email" disabled value="donaltrump@gmail.com" /></i></li>
+                </ul>
+                <button onclick="showInfor()"  id="btn">Cập nhật thông tin</button>
+                <button onclick="hiddenInfor()"id="save">Save</button>
+                <button onclick="hiddenInfor()"id="huy">Hủy</button>
+            </div> 
+            <div id="content-right">
+                <div id="content-right-top">
+                    <textarea id="write-content"></textarea>
+                    <input id="post" type="submit" value="Đăng" />  
+                </div>
+                <div id="content-right-bot">
+                    <div class="listNotes">
+                        <div class="contentNodes">
+                            <div class="node-item">
+                                <input type="radio" name="public"  value="public" required>
+                                <input type="radio" name="public"  value="private"><br/>
+                                <span id="pb">Public</span>
+                            </div>
+                            <div class="nodes">
+                                <p>Wellcome to TodoPro!!! And dmm</p>
+                                <button><i class="fas fa-edit" id="edit"></i></button>
+                                <button><i class="fas fa-trash-alt" id="del"></i></button>
+                            </div>
+                        </div>
+                        <div class="contentNodes">
+                            <div class="node-item">
+                                <input type="radio" name="public" value="public" required>
+                                <input type="radio" name="public" value="private"><br/>
+                                <span>Public</span>
+                            </div>
+                            <div class="nodes">
+                                <p>Wellcome to TodoPro!!! And dmm</p>
+                                <button><i class="fas fa-edit" id="edit"></i></button>
+                                <button><i class="fas fa-trash-alt" id="del"></i></button>
+                            </div>
+                        </div>
+                        <div class="contentNodes">
+                            <div class="node-item">
+                                <input type="radio" name="public" value="public" required>
+                                <input type="radio" name="public" value="private"><br/>
+                                <span>Public</span>
+                            </div>
+                            <div class="nodes">
+                                <p>Wellcome to TodoPro!!! And dmm</p>
+                                <button><i class="fas fa-edit" id="edit"></i></button>
+                                <button><i class="fas fa-trash-alt" id="del"></i></button>
+                            </div>
+                        </div>
+                        <div class="contentNodes">
+                            <div class="node-item">
+                                <input type="radio" name="public" value="public" required>
+                                <input type="radio" name="public" value="private"><br/>
+                                <span>Public</span>
+                            </div>
+                            <div class="nodes">
+                                <p>Wellcome to TodoPro!!! And dmm</p>
+                                <button><i class="fas fa-edit" id="edit"></i></button>
+                                <button><i class="fas fa-trash-alt" id="del"></i></button>
+                            </div>
+                        </div>
+                        <div class="contentNodes">
+                            <div class="node-item">
+                                <input type="radio" name="public" value="public" required>
+                                <input type="radio" name="public" value="private"><br/>
+                                <span>Public</span>
+                            </div>
+                            <div class="nodes">
+                                <p>Wellcome to TodoPro!!! And dmm</p>
+                                <button><i class="fas fa-edit" id="edit"></i></button>
+                                <button><i class="fas fa-trash-alt" id="del"></i></button>
+                            </div>
+                        </div>
+                        <div class="contentNodes">
+                            <div class="node-item">
+                                <input type="radio" name="public" value="public" required>
+                                <input type="radio" name="public" value="private"><br/>
+                                <span>Public</span>
+                            </div>
+                            <div class="nodes">
+                                <p>Wellcome to TodoPro!!! And dmm</p>
+                                <button><i class="fas fa-edit" id="edit"></i></button>
+                                <button><i class="fas fa-trash-alt" id="del"></i></button>
+                            </div>
+                        </div>
+                </div>
+                   <div>
+                       <button class="pagination">&lsaquo;</button>
+                       <button class="pagination">1</button>
+                       <button class="pagination">2</button>
+                       <button class="pagination">3</button>
+                       <button class="pagination">&rsaquo;</button>
+                   </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="foter">
+
+        </div>
+    </footer>
+    <script  src="js/indexTDP.js"></script>
+</body>
+
+</html>
